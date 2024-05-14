@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Send Email</title>
+    <style>
+      body {
+        color: #333;
+        background: linear-gradient(to right, #fff, #cacaca);
+        text-align: center;
+        padding-top: 100px;
+        font-family: Arial, sans-serif;
+      }
+      #email-form {
+        background: #f2f2f2;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      }
+      #email-form label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      #email-form input[type="text"],
+      #login-form input[type="password"] {
+        padding: 10px;
+        width: 200px;
+        margin-bottom: 20px;
+      }
+      #email-form input[type="submit"] {
+        padding: 10px 20px;
+        background: #bbb;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 10%;
+      }
+      #email-form input[type="submit"]:hover {
+        background: #aaa;
+        border-radius: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="email-form">
+      <label for="to">To:</label><br />
+      <input type="text" id="to" name="to" /><br />
+      <label for="subject">Subject:</label><br />
+      <input type="text" id="subject" name="subject" /><br />
+      <label for="from">From:</label><br />
+      <input type="text" id="from" name="from" /><br />
+      <label for="text">Text:</label><br />
+      <input type="text" id="text" name="text" /><br />
+      <label for="html">HTML:</label><br />
+      <input type="text" id="html" name="html" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
